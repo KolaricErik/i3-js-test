@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #ffda72;
+}
+
+#kviz {
+    display: flex;
+    position: relative;
+}
+
+#sidebar {
+    width: 50px;
+    padding: 10px;
+    float: left;
+    height: 600px;
+    justify-content: space-around;
+}
+
+.hide { 
+    display: none;
+}
+
+#dobrodosli {
+    padding: 10px;
+    width: 100%;
+    border-style: solid;
+    margin: 10px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #ffe9ac;
+    animation-duration: 0.6s;
+    animation-name: prikaz;
+}
+
+.naslov {
+    position: absolute;
+    top: 15px;
+    left: 35%;
+    font-size: 50px;
+}
+
+#kreni {
+    height: 80px;
+    width: 160px;
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+.br {
+    background-color: #ffc012;
+    border-style: solid;
+    padding: 10px;
+    height: 150px;
+}
+
+#odabranoPitanje {
+    padding: 10px;
+    width: 100%;
+    border-style: solid;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #ffe9ac;
+    height: 600px;
+    animation-duration: 0.6s;
+    animation-name: prikaz;
+}
+
+@keyframes prikaz {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+#uspjeh {
+    padding: 10px;
+    width: 100%;
+    border-style: solid;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #ffe9ac;
+    animation-duration: 0.6s;
+    animation-name: prikaz;
+}
+
+#trenutnoPitanje {
+    padding: 30px;
+    margin: 50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.pogled {
+    padding: 10px;
+    border-style: solid;
+    height: 100%;
+    position: relative;
+}
+
+#sljedece {
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#rezultati {
+    height: 40px;
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+
+#prijasnje {
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+.odg {
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+
+.pravilo {
+    position: relative;
+    top: 100px;
+    left: 35%;
+    text-decoration: underline;
+}
+ 
+@media only screen and (max-width: 800px) {
+    .odg {
+        width: 200px;
+    }
+
+    #trenutnoPitanje {
+        font-size: 20px;
+        padding: 0;
+        margin-top: 60px;
+    }
+
+    #kreni {
+        left: 20%;
+    }
+
+    .naslov {
+        font-size: 35px;
+        left: 20%;
+    }
+
+    .pravilo {
+        left: 20%;
+        width: 70%;
+    }
+  }
+
+button {
+    border-radius: 30px;
+}
+
+
+.odgovori {
+    position: absolute;
+    width: 85%;
+    bottom: 30px;
+    margin: 0;
+}
+
+.zeleno {
+    background-color: green;
+}
+.crveno {
+    background-color: red;
+
+}
