@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kviz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="kviz">
+        <div id="sidebar">
+            <button id="jedan" class="br" onclick="prebaci(0)">
+                <h1>1</h1>
+            </button>
+            <button id="dva" class="br" onclick="prebaci(1)">
+                <h1>2</h1>
+            </button>
+            <button id="tri" class="br" onclick="prebaci(2)">
+                <h1>3</h1>
+            </button>
+            <button id="cetiri" class="br" onclick="prebaci(3)">
+                <h1>4</h1>
+            </button>
+        </div>
+        <div id="dobrodosli">
+            <h1 class="naslov">Dobro došli!</h1>
+            <p class="pravilo">Pravilo: Izaberite 1 odgovor po pitanju :)</p>
+            <button id="kreni" onclick="pokreniKviz()">Kreni</button>
+        </div>
+            <div id="odabranoPitanje" class="hide">
+                <button id="prijasnje" onclick="vratiSe()">Prijašnje</button>
+                <button id="sljedece" onclick="postaviPitanje()">Sljedeće</button>
+                <button id="rezultati" onclick="prikaziRezultat()" class="hide" >Prikaži rezultat</button>
+
+                <div id="trenutnoPitanje"></div>
+                <div id="odgovori" class="odgovori"></div>
+            </div>
+            <div id="uspjeh" class="hide"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
